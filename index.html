@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Sync Main Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+
+        <header class="header-content">
+
+            <a href="#logo" class="logo">
+                <img src="lightlogo.png" alt="logo" class="logo-icon">
+            </a>
+            <div class="dropdown-container">
+            <nav class="nav" id="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#reviews" class="nav-link">Reviews</a>
+                <a href="#about" class="nav-link"> About</a>
+            </nav>
+
+            <a href="#contact" class="contact-button">
+                Contact Us
+            </a>
+        </div>
+
+            <button class="menu-button" id="menu-button">
+                <img src="hamburger.svg" alt="menuButton" class="menu-icon">
+            </button>
+        </header>
+    </div>
+    <script>
+        const menuButton = document.querySelector('.menu-button');
+        const dropdownContainer = document.querySelector('.dropdown-container');
+
+        menuButton.addEventListener('click', () => {
+    dropdownContainer.classList.toggle('active');
+});
+
+
+    </script>      
+
+    <!-- Hero Section -->
+    <div class="content" id="home">
+        <section class="main-section">
+            <div class="content-left">
+                <p class="section-label">
+                    Very Proud to introduce
+                </p>
+
+                <h1 class="section-heading">
+                    Seamless learning for bright future
+                </h1>
+                <h4 class="as">by Ayesha Sultana</h4>
+
+                <p class="section-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quidem expedita eum repellendus optio ipsa laborum fugit omnis accusamus architecto.
+                </p>
+                <div class="button-group">
+                    <a href="#start" class="start-button"> Start Now</a>
+                    <a href="#Tour" class="tour-button"> Take tour</a>
+                </div>
+            </div>
+
+            <div class="content-right">
+                <div class="image-container">
+                    <img src="./girl.png" alt="rightimage" class="section-image">
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <!-- Mini hero section (Trusted by section) -->
+    <div class="contenttwo">
+        <h2>Trusted by the best</h2>
+        <div class="companies">
+
+            <div class="company-logo">
+                <img src="google.svg" class="svg-img">
+                <span class="logo-text">Google</span>
+            </div>
+
+            <div class="company-logo">
+                <img src="microsoft.svg" class="svg-img">
+                <span class="logo-text">Microsoft</span>
+            </div>
+
+            <div class="company-logo">
+                <img src="linkedin.svg" class="svg-img">
+                <span class="logo-text">LinkedIn</span>
+            </div>
+
+            <div class="company-logo">
+                <img src="instagram.svg" class="svg-img">
+                <span class="logo-text">Instagram</span>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Cards section -->
+    <div class="cards-section" id="features">
+
+        <div class="cards-desc">
+            <h2> Our Competitive Advantage</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas expedita doloremque quos itaque possimus voluptate ullam assumenda sunt alias autem!</p>
+        </div>
+
+        <div class="grids">
+            <div id="gridees"   class="grid1" style="background-color: rgb(125, 140, 169); border-radius: 12px;">
+                <img src="grid1.svg" alt="grid1img" class="gridimg">
+                <h2 class="gridheading">Personalized Learning</h2>
+                <p class="gridpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, totam?</p>
+            </div> 
+
+            <div id="gridees"  class="grid2" style="background-color: rgb(79, 148, 125); border-radius: 12px;">
+                <img src="grid2.svg" alt="" class="gridimg">
+                <h2 class="gridheading">Affordability</h2>
+                <p class="gridpara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, labore!</p>
+            </div>
+
+            <div id="gridees"  class="grid3" style="background-color: rgb(190, 200, 110); border-radius: 12px;">
+                <img src="grid3.svg" alt="" class="gridimg">
+                <h2 class="gridheading">Industry Partnership</h2>
+                <p class="gridpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, perferendis.</p>
+            </div>
+
+            <div id="gridees"  class="grid4" style="background-color: rgb(177, 105, 105); border-radius: 12px;">
+                <img src="grid4.svg" alt="" class="gridimg">
+                <h2 class="gridheading">Innovative Technology</h2>
+                <p class="gridpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, est.</p>
+            </div>
+
+            <div id="gridees"  class="grid5" style="background-color: rgb(164, 117, 139); border-radius: 12px;">
+                <img src="grid5.svg" alt="" class="gridimg">
+                <h2 class="gridheading">Responsive Support</h2>
+                <p class="gridpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, necessitatibus?</p>
+            </div>
+
+            <div id="gridees"  class="grid6" style="background-color: rgb(190, 158, 114); border-radius: 12px;">
+                <img src="grid6.svg" alt="" class="gridimg">
+                <h2 class="gridheading">Analytics and Insights</h2>
+                <p class="gridpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, eum.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Testimonial section -->
+     <div class="testimonial" id="reviews">
+        <div class="testimonial-content">
+
+            <div class="test-title">
+                <h2>What others' say about us...</h2>
+            </div>
+
+            <div class="test-cards">
+
+                <div class="tc1" id="cardss">
+                    <p class="tpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, unde. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, quidem?</p>
+                    <img src="wallpaper.jpeg" alt="People" class="timg">
+                    <h3 class="thead">Ayesha Sultana</h3>
+                    <p class="tpara">Software Engineer</p>
+                </div>
+
+                <div class="tc2" id="cardss">
+                    <p class="tpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quis dolore id esse alias laboriosam voluptatum quasi perspiciatis omnis rerum.</p>
+                    <img src="mypic.jpg" alt="People" class="timg">
+                    <h3 class="thead">Reeha Anjum</h3>
+                    <p class="tpara">Student</p>
+                </div>
+
+                <div class="tc2" id="cardss">
+                    <p class="tpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus impedit eum dolores aliquid atque debitis, sed reprehenderit aliquam obcaecati sit!</p>
+                    <img src="dplandscape.jpeg" alt="People" class="timg">
+                    <h3 class="thead">Nazeera</h3>
+                    <p class="tpara">Web Designer</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="newsletter" id="contact">
+            <div class="news-content">
+            <div class="news-img" id="left">
+                <img src="herosec.jpg" alt="newsletter-image" loading="lazy" class="news-img">
+            </div>
+            <div class="news-content" id="right">
+                <h2 class="news-title">Get the latest updates.</h2>
+                <p class="news-desc">Sign-up for our news-letter</p>
+                <div class="form">
+                    <form action="">
+                        <input type="text" name="email" value="Email" class="news-email">
+                        <button class="news-button">Send</button>
+                    </form>
+                </div>
+                <p class="news-privacy">By signing up to our newsletter you agree to our <a href="" class="news-link">terms of services</a> and <a href="" class="news-link">privacy policy</a>.</p>
+            </div>
+            </div>
+        </div>
+     </div>
+
+    <!-- Footer Section -->
+     <div class="foot-container" id="about">
+        <div class="footer">
+            <div class="main-section">
+                <div class="name">
+                    <img src="lightlogo.png" alt="" class="footer-logo">
+                    <p class="foot-para">Seamless Learning for Brighter Future.</p>
+                    <div class="logos-container">
+                        <a href="#" class="foot-logo"><img src="instagram.svg" alt=""></a>
+                        <a href="#" class="foot-logo"><img src="linkedin.svg" alt=""></a>
+                        <a href="#" class="foot-logo"><img src="google.svg" alt=""></a>
+                        <a href="#" class="foot-logo"><img src="microsoft.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="overview">
+                <div class="products-section" id="overview-content">
+                <h2>Products</h2>
+                <p>Overview</p>
+                <p>Solutions</p>
+                <p>Pricing</p>
+                <p>Customers</p>
+                </div>
+
+                <div class="services-section" id="overview-content">
+                <h2>Company</h2>
+                <p>About</p>
+                <p>Investor Relations</p>
+                <p>Jobs</p>
+                <p>Press</p>
+                <p>Blog</p>
+                </div>
+
+                <div class="support-section" id="overview-content">
+                <h2>Support</h2>
+                <p>Contact</p>
+                <p>Documentation</p>
+                <p>Chat</p>
+                <p>FAQ</p>
+                </div>
+
+                <div class="legal-section" id="overview-content">
+                <h2>Legal</h2>
+                <p>Terms and Services</p>
+                <p>Privacy Policy</p>
+                <p>Cookie setting</p>
+                </div>
+            </div>
+        </div>
+     </div>
+     <hr>
+     <div class="copyright">
+        &copy;2025 - Present TechTitaness by AYESHA SULTANA. All rights reserved.
+     </div>      
+</body>
+</html>
